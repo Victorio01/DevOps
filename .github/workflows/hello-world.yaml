@@ -5,7 +5,7 @@ on:
    pull_request:
      branches: [ main ]
 jobs:
-  test:
+  job1:
     name: test-node 
     runs-on: ubuntu-latest
     strategy:
@@ -23,7 +23,7 @@ jobs:
         CI: true
     - run: npm install
     - run: npm run test
-  deply:
+   job2:
        name: deploy to cluster
        runs-on: ubuntu-latest
        
