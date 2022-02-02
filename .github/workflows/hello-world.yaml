@@ -24,8 +24,7 @@ jobs:
     - run: npm install
     - run: npm run test
   job2:
-       dependsOn: job1
-       condition: failed()
+       needs: job1
        name: deploy to cluster
        runs-on: ubuntu-latest
        
