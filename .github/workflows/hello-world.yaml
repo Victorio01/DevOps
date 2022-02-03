@@ -50,5 +50,6 @@ jobs:
            with:
              context: capstone_project/hello-world/
              dockerfile: Dockerfile
+             container_name: hello-world
              push: true
              tags: user/app:latest
