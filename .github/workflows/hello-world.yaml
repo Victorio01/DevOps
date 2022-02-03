@@ -48,7 +48,7 @@ jobs:
            name: Build and push
            uses: docker/build-push-action@v2
            with:
-             fiel: capstone_project/hello-world
+             fiel: capstone_project/hello-world/Dockerfile
              container_name: hello-world
              push: true
              tags: user/app:latest
