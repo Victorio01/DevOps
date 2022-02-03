@@ -48,7 +48,7 @@ jobs:
            name: Build and push
            uses: docker/build-push-action@v2
            with:
-             entrypoint: capstone_project/hello-world
+             entrypoint: ./capstone_project/hello-world
              dockerfile: Dockerfile
              container_name: hello-world
              push: true
