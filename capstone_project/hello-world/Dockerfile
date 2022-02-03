@@ -2,8 +2,8 @@ FROM node:16.13.1-alpine
 
 WORKDIR /app/src
 
-COPY ./package.json ./
-COPY ./package-lock.json ./
+COPY capstone_project/hello-world/package.json ./
+COPY capstone_project/hello-world/package-lock.json ./
 
 RUN npm install
 
