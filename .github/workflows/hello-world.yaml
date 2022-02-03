@@ -47,8 +47,8 @@ jobs:
          -
            name: Build and push
            uses: docker/build-push-action@v2
-           context: capstone_project/hello-world/Dockerfile
            with:
+             context: capstone_project/hello-world/Dockerfile
              dockerfile: Dockerfile
              container_name: hello-world
              push: true
