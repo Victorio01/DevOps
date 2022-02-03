@@ -19,6 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: perfanalytics-api/package-lock.json
       env:
         CI: true    
     - run: npm install
