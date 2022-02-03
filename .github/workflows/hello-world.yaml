@@ -1,7 +1,7 @@
 name: hello-world
 on: 
    push:
-     branches: [ capstone_project/hello-world ]
+     branches: [ main ]
    pull_request:
      branches: [ main ]
 jobs:
